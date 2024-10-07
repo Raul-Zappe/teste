@@ -47,17 +47,13 @@ nav {
 nav .logo h1 {
     font-size: 1.5em;
     color: var(--text-color);
+    align-items:end;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
-}
+    display: flex;    --btn-background: #76c7c0;
 
-nav ul li a {
-    text-decoration: none;
-    color: var(--text-color);
     font-size: 1.1em;
 }
 
@@ -104,9 +100,12 @@ nav ul li a.faq-btn {
 }
 
 .card {
+    border: solid black;
+    border-width: 0.1px;
     background-color: var(--card-background);
     padding: 30px;
-    border-radius: 10px;
+    box-sizing: 50px 50px;
+    border-radius: 1px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
