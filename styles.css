@@ -173,3 +173,58 @@ footer {
     background-color: var(--background-color);
     color: var(--text-color);
 }
+/* Seção nova - Arte Reciclada */
+.arte-reciclada .image-text-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.arte-reciclada .image-container,
+.arte-reciclada .text-container {
+    flex: 1 1 45%;
+    padding: 15px;
+}
+
+.arte-reciclada .image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.arte-reciclada .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.arte-reciclada .image-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Ajustes no Tema Claro/Escuro */
+body.light, body.dark {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.light header, body.dark header {
+    background-color: var(--header-background);
+}
+
+body.light .card, body.dark .card {
+    background-color: var(--card-background);
+}
+
+body.light footer, body.dark footer {
+    background-color: var(--footer-background);
+}
+
+/* Novo esquema de cores para a arte reciclada */
+body.light .arte-reciclada,
+body.dark .arte-reciclada {
+    background-color: var(--art-background);
+}
